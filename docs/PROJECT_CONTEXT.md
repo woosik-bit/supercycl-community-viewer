@@ -4,7 +4,9 @@
 
 Supercycl 커뮤니티의 관리자 대시보드를 데스크톱 웹에서도 조회하는 방식을 YouthMeta 담당자와 협의하기 위한 목업입니다. 시연 로그인 후 담당 채널의 정보를 확인하며, 수정·관리 조작은 제공하지 않습니다.
 
-주 작업 폴더는 `Projects/Supercycl-Community-Viewer/`입니다. 기존 공개 저장소 `5kyo/supercycl-community-viewer`의 커밋 이력과 GitHub Pages를 이어서 사용합니다. 프로젝트를 열 때는 이 폴더를 선택합니다.
+주 작업 폴더는 `supercycl-product-community-viewer/`이며, 공개 저장소 `woosik-bit/supercycl-community-viewer`와 GitHub Pages(https://woosik-bit.github.io/supercycl-community-viewer/)에서 관리합니다. 프로젝트를 열 때는 이 폴더를 선택합니다.
+
+2026.11에 이전 담당자의 저장소 `5kyo/supercycl-community-viewer`에서 커밋 이력을 그대로 인수했습니다. 이전 저장소와 `5kyo.github.io` 목업은 더 이상 갱신하지 않으며, 이후 작업은 모두 이 저장소에서 진행합니다.
 
 ## 구현되어 있는 화면
 
@@ -70,15 +72,15 @@ HTML 안에 스타일·스크립트·데이터·로고가 포함되어 외부 �
 - 보조 문구도 11px 이상, 본문 대비 4.5:1 이상을 유지합니다.
 - 마우스 오버 효과는 hover를 지원하는 기기에서만 적용해 터치 기기에서 눌렀던 항목이 선택된 것처럼 남지 않게 합니다. 전체 채널 창의 검색창 자동 포커스도 마우스 환경에서만 적용해 휴대폰에서 키보드가 바로 올라오지 않게 합니다.
 
-## 모바일 프로젝트 참조
+## 모바일 기획 프로젝트 참조
 
-같은 `Projects/` 아래에 `Supercycl-Mobile/`이 있을 때 아래 상대 경로에서 정책을 참고할 수 있습니다. 경로는 이 프로젝트 루트를 기준으로 하며 모바일 프로젝트가 없으면 소유자에게 최신 자료를 확인합니다. 모바일 저장소의 문서는 이 저장소의 실행 의존성이 아닙니다.
+Supercycl 모바일 앱의 정책·화면 정의는 같은 상위 폴더의 기획 프로젝트 `supercycl-product-planning/`(비공개 저장소)에 있습니다. 아래 경로는 이 프로젝트 루트를 기준으로 합니다. 기획 프로젝트의 문서는 이 저장소의 실행 의존성이 아닙니다.
 
 | 확인할 내용 | 참고 위치 |
 | --- | --- |
-| 커뮤니티·멤버십·신고·제재의 최신 정책 | `../Supercycl-Mobile/_workspace/spec/01_spec.md`의 YouthMeta 관련 절 |
-| 채팅·관리자·그룹·랭킹·신고 처리 화면 정의 | `../Supercycl-Mobile/_workspace/spec/01_spec_screens/SCR-901.md` ~ `SCR-909.md` 중 영향 화면 |
-| 모바일에서 구현한 인터랙션 참고 | `../Supercycl-Mobile/assets/design-spec/community.js` |
+| 커뮤니티·멤버십·신고·제재의 최신 정책 | `../supercycl-product-planning/_workspace/spec/01_spec.md`의 YouthMeta 관련 절 |
+| 채팅·관리자·그룹·랭킹·신고 처리 화면 정의 | `../supercycl-product-planning/_workspace/spec/01_spec_screens/SCR-901.md` ~ `SCR-909.md` 중 영향 화면 |
+| 모바일에서 구현한 인터랙션 참고 | `../supercycl-product-planning/assets/design-spec/community.js` |
 
 이 웹 목업에 구현된 신고·제재 조회는 작성 당시의 협의용 제안입니다. 모바일 정책은 독립적으로 변경될 수 있으므로, 향후 관련 화면을 수정하기 전에 최신 원문과 차이를 확인합니다. 웹 뷰어 수정만으로 모바일 정책을 변경하지 않습니다.
 
@@ -91,4 +93,4 @@ HTML 안에 스타일·스크립트·데이터·로고가 포함되어 외부 �
 
 ## 소스와 배포본
 
-`index.html`이 원본이고 GitHub Pages는 저장소의 `main` 루트를 게시합니다. 독립 프로젝트에서 관리하므로 데스크톱의 `슈퍼사이클_커뮤니티_뷰어_목업.html` 복사본은 계속 갱신하지 않습니다. 별도 요청이 있을 때만 공유본을 갱신합니다. 실행·Git·배포 명령은 [README](../README.md)에 있습니다.
+`index.html`이 원본이고 GitHub Pages는 저장소의 `main` 루트를 게시합니다. 별도 HTML 공유본은 요청이 있을 때만 만듭니다. 실행·Git·배포 명령은 [README](../README.md)에 있습니다.

@@ -6,8 +6,8 @@
 
 1. [README.md](README.md)와 [프로젝트 컨텍스트](docs/PROJECT_CONTEXT.md)를 읽습니다.
 2. `git status --short`, `git branch --show-current`, `git remote -v`로 작업 위치·기존 변경·원격을 확인합니다.
-3. 웹 목업의 수정 원본은 이 폴더의 `index.html`입니다. 임시 폴더나 데스크톱 공유본에서 별도로 수정하지 않습니다.
-4. 제품 정책을 변경하는 작업이면 프로젝트 컨텍스트에 적힌 Supercycl Mobile의 최신 정책 원문을 확인합니다. 내부 정책 문서는 참고용이며 공개 저장소에 통째로 복사하지 않습니다.
+3. 웹 목업의 수정 원본은 이 폴더의 `index.html`입니다. 임시 폴더나 복사본에서 별도로 수정하지 않습니다.
+4. 제품 정책을 변경하는 작업이면 프로젝트 컨텍스트에 적힌 기획 프로젝트(`../supercycl-product-planning`)의 최신 정책 원문을 확인합니다. 내부 정책 문서는 참고용이며 공개 저장소에 통째로 복사하지 않습니다.
 
 ## 구현 범위
 
@@ -23,8 +23,8 @@
 ## 검증과 Git
 
 - 검증과 배포 방법은 README를 따릅니다. 변경 범위에 맞게 확인하고 결과를 보고합니다.
-- 공개 원격은 `5kyo/supercycl-community-viewer`, 게시 브랜치는 `main`입니다. 이 폴더에서는 Supercycl Mobile의 생성·릴리스 도구를 실행하지 않습니다.
+- 공개 원격(`origin`)은 `woosik-bit/supercycl-community-viewer`, 게시 브랜치는 `main`입니다. `team` 원격(`5kyo/supercycl-community-viewer`)은 갱신이 끝난 이전 저장소이므로 푸시하지 않습니다. 이 폴더에서는 기획 프로젝트의 생성·릴리스 도구를 실행하지 않습니다.
 - 기존 사용자 변경을 보존하며 강제 푸시하지 않습니다. 커밋은 `feat:`, `fix:`, `docs:` 등 변경 목적에 맞게 작성합니다.
 - 사용자가 선택한 GitHub 활성 계정은 유지합니다. 저장소 접근에 별도 인증을 사용할 때는 해당 명령에만 적용합니다.
-- 프로젝트의 `index.html`과 GitHub Pages 배포본을 관리합니다. 데스크톱 HTML 복사본은 계속 갱신하지 않으며, 사용자가 별도로 요청한 경우에만 복사합니다.
+- 프로젝트의 `index.html`과 GitHub Pages 배포본을 관리합니다. 별도 HTML 복사본은 사용자가 요청한 경우에만 만듭니다.
 - 작업 규칙은 이 문서에, 목적·결정 사항은 프로젝트 컨텍스트에, 실행·배포 방법은 README에 기록합니다.
